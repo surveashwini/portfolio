@@ -1,0 +1,1531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './colors.scss';
+@import './license.scss';
+html {
+    scroll-behavior: smooth;
+}
+
+.portfolio-body {
+    font-family: ''Roboto'', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    .header {
+        .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 7vh 5vw 0vh;
+            .left-menu {
+                .logo {
+                    width: 250px;
+                }
+            }
+            .right-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                .nav-link {
+                    margin: 10px;
+                    cursor: pointer;
+                    color: #808080;
+                    text-decoration: none;
+                    &:hover {
+                        font-size: large;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        height: 100vh;
+        .introduction {
+            margin-top: 115px;
+            .text-introduction {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                margin-right: 0vw;
+                margin-left: 0vw;
+                padding-right: 5vw;
+                padding-left: 5vw;
+                .greeting-one {
+                    // margin: 6% 0% 0% !important;
+                    font-size: 25vh;
+                    line-height: 22vh;
+                    color: rgb(0, 0, 0);
+                    transform-style: preserve-3d;
+                    margin-top: 5px;
+                    margin-bottom: 0px;
+                    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+                    font-weight: 400;
+                    animation-duration: 800ms;
+                    animation-delay: 800;
+                    transition-timing-function: linear;
+                    animation-name: hello;
+                    transform-style: preserve-3d;
+                }
+                @keyframes hello {
+                    from {
+                        transform: translate3d(0, 100%, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0%, 0);
+                    }
+                }
+                @keyframes you {
+                    from {
+                        transform: translate3d(0%, -50%, 0);
+                    }
+                    100% {
+                        transform: translate3d(0%, 0%, 0);
+                    }
+                }
+                @keyframes desc {
+                    from {
+                        visibility: visible;
+                        transform: translate3d(0, 100%, 0);
+                    }
+                    100% {
+                        visibility: visible;
+                        transform: translate3d(0, 0%, 0);
+                    }
+                }
+                .greeting-two {
+                    width: 100vw;
+                    color: transparent;
+                    background: $white;
+                    z-index: 1;
+                    margin-top: 2%;
+                    margin: 0;
+                    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+                    font-size: 25vh;
+                    line-height: 22vh;
+                    font-weight: 900;
+                    animation-duration: 500ms;
+                    animation-delay: 1000;
+                    transition-timing-function: linear;
+                    transform-style: preserve-3d;
+                }
+                .description {
+                    color: transparent;
+                    visibility: hidden;
+                    width: 35%;
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                    font-family: ''Roboto'', sans-serif;
+                    color: $gray;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-weight: 300;
+                    animation-duration: 1000ms;
+                    animation-delay: 1000;
+                    transition-timing-function: linear;
+                }
+            }
+        }
+        .scroll-down {
+            cursor: pointer;
+            margin: 1% 50%;
+        }
+    }
+    .about {
+        height: 100vh;
+        width: 100vw;
+    }
+    .projects {
+        width: 100vw;
+        height: 100vh;
+        columns: 2;
+        color: $white;
+        display: flex;
+        background-size: cover;
+        .project-container {
+            display: flex;
+            .project-one,
+            .project-two,
+            .project-three {
+                background-color: $dark-bg-color;
+                opacity: 0.7;
+                height: 100vh;
+                width: 50vw;
+                margin: 0;
+                .project-details {
+                    .project-description {
+                        color: #fff;
+                        line-height: 1.6;
+                        padding: 10%;
+                        .project-number {
+                            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+                            font-size: 70px;
+                            line-height: 60px;
+                            font-weight: 400;
+                        }
+                        .project-heading {
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 85px;
+                            line-height: 70px;
+                            font-weight: 900;
+                        }
+                        .button-containers {
+                            .button {
+                                height: 40px;
+                                width: 150px;
+                                color: $black;
+                                font-weight: 900;
+                                margin-top: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .project-two {
+                background-color: rgba(165, 165, 165, 0.75);
+                .project-description {
+                    color: $black;
+                }
+            }
+            .project-three {
+                background-color: rgba(255, 255, 255, 0.75);
+                .project-details {
+                    .project-description {
+                        color: rgb(2, 2, 2);
+                    }
+                }
+            }
+            .image-container {
+                width: 50vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .project-image {
+                    width: 80%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+    .about {
+        padding-right: 5vw;
+        padding-left: 5vw;
+        flex-direction: column;
+        justify-content: center;
+        .about-general {
+            width: 100%;
+            border-bottom: 1px none #e4e4e4;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .details {
+                width: 40vw;
+                padding-right: 5vw;
+            }
+            .about-title {
+                margin-bottom: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 44px;
+                line-height: 52px;
+                font-weight: 900;
+            }
+            .about-detail {
+                margin-bottom: 20px;
+                font-family: 'Roboto', sans-serif;
+                color: $gray;
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 300;
+            }
+        }
+        .about-content {
+            width: 100%;
+            padding-bottom: 5vh;
+            border-bottom: 1px none #e4e4e4;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .details {
+                width: 40vw;
+                padding-top: 20px;
+                padding-right: 5vw;
+            }
+            .about-content-title {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 44px;
+                line-height: 52px;
+                font-weight: 900;
+            }
+            .company-details {
+                .company-name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-family: 'Roboto', sans-serif;
+                    color: #333;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    h4 {
+                        margin-bottom: 3px;
+                    }
+                    .job-details {
+                        color: $gray;
+                        margin: 0
+                    }
+                }
+            }
+        }
+        .sign {
+            width: 40vw;
+            padding-left: 27vw;
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.contact {
+    padding-top: 5%;
+    text-align: center;
+    .contact-header {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 44px;
+        line-height: 52px;
+        font-weight: 900;
+    }
+    .contact-container {
+        .contact-button {
+            display: inline-block;
+            padding: 9px 15px;
+            background-color: #3898EC;
+            color: $white;
+            border: 0;
+            line-height: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 2px;
+            padding: 10px 60px;
+            background-color: $black;
+            -webkit-transition: background-color 400ms ease, box-shadow 400ms ease, color 400ms ease;
+            transition: background-color 400ms ease, box-shadow 400ms ease, color 400ms ease;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 20px;
+            color: $white;
+            margin: 0% 2% 0% 0%;
+        }
+    }
+}
+
+.footer {
+    height: 50vh;
+    width: 100vw;
+    background-color: $light-pink;
+    .scroll-up {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .footer-logo {
+        .logo {
+            margin: 5% 4% 0%;
+            width: 250px;
+        }
+    }
+    .footer-links-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 3%;
+        .footer-link {
+            cursor: pointer;
+            padding-bottom: 5px;
+            margin-right: 10px;
+            box-shadow: inset 0 -2px 0 0 rgb(0 0 0 / 10%);
+            -webkit-transition: box-shadow 200ms ease, color 200ms ease;
+            transition: box-shadow 200ms ease, color 200ms ease;
+            font-family: 'Roboto', sans-serif;
+            color: $gray;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+    .license-details {
+        font-family: 'Roboto', sans-serif;
+        color: $gray;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 3.4vw;
+                        line-height: 50px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 20% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 100vw;
+                    font-size: 5vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 5vw;
+                    }
+                    .about-detail {
+                        font-size: 3vw;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 5vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 3vw;
+                            margin-bottom: 40px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 2.5vw;
+                        line-height: 60px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 15% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 50vw;
+                    font-size: 3vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: flex;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 5vw;
+                    }
+                    .about-detail {
+                        font-size: 2.5vw;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 5vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 2.5vw;
+                            margin-bottom: 40px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+                .contact-container {
+                    .contact-button {
+                        height: 50px;
+                        width: 150px;
+                        font-size: xxx-large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 2.5vw;
+                        line-height: 60px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 10% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 50vw;
+                    font-size: 3vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: flex;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 4vw;
+                    }
+                    .about-detail {
+                        font-size: 2vw;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 4vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 2vw;
+                            margin-bottom: 40px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: larger;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 20vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 1.5vw;
+                        line-height: 40px;
+                        width: 65%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 2% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 50vw;
+                    font-size: 1.5vw;
+                    .project-details {
+                        .project-description {
+                            .project-heading {
+                                font-size: 65px;
+                            }
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: flex;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 3vw;
+                    }
+                    .about-detail {
+                        font-size: 1.2vw;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 3vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 1.2vw;
+                            margin-bottom: 2px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 60vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 18px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+                .contact-container {
+                    .contact-button {
+                        height: 20px;
+                        width: 50px;
+                        font-size: larger;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 1.5vw;
+                        line-height: 60px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 3% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 50vw;
+                    font-size: 2vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: flex;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 3vw;
+                    }
+                    .about-detail {
+                        font-size: 1.5vw;
+                        line-height: 60px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 3vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 1.5vw;
+                            margin-bottom: 40px;
+                            line-height: 50px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+                .contact-container {
+                    .contact-button {
+                        height: 30px;
+                        width: 100px;
+                        font-size: xx-large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 1.5vw;
+                        line-height: 60px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 3% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 50vw;
+                    font-size: 2vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: flex;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 2vw;
+                    }
+                    .about-detail {
+                        font-size: 1.5vw;
+                        line-height: 60px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 2vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 1.5vw;
+                            margin-bottom: 40px;
+                            line-height: 50px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+                .contact-container {
+                    .contact-button {
+                        height: 30px;
+                        width: 100px;
+                        font-size: xx-large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                display: flex;
+                flex-direction: column;
+                padding: 7% 5% 0% 0%;
+                .right-menu {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .main {
+            height: 81vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 15vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 4vw;
+                        line-height: 50px;
+                        width: 65%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 20% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 100vw;
+                    font-size: 5vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 5vw;
+                    }
+                    .about-detail {
+                        font-size: 4vw;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 5vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 4vw;
+                            margin-bottom: 40px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .footer-links-container {
+                .footer-link {
+                    margin: 5px;
+                    font-size: 25px;
+                }
+            }
+            .contact {
+                padding-top: 5%;
+                text-align: center;
+                .contact-container {
+                    .contact-button {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 991px) {
+    .portfolio-body {
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 100vw;
+                    font-size: 5vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    height: 70px;
+                                    width: 250px;
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 3vw;
+                    }
+                    .about-detail {
+                        font-size: 3.5vw;
+                        line-height: 50px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 3vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 3.5vw;
+                            margin-bottom: 40px;
+                            line-height: 38px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+    }
+}
+
+
+/* On screens that are 992px or less, tablets */
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .portfolio-body {
+        .header {
+            .nav {
+                .right-menu {
+                    font-size: x-large;
+                }
+            }
+        }
+        .main {
+            height: 78vh;
+            .introduction {
+                .text-introduction {
+                    .hello-container,
+                    .you-container {
+                        .greeting-one,
+                        .greeting-two {
+                            font-size: 20vh;
+                        }
+                    }
+                    .description {
+                        margin-left: 20px;
+                        font-size: 3.4vw;
+                        line-height: 45px;
+                        width: 65%;
+                    }
+                }
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 100vw;
+                    font-size: 5vw;
+                    .project-details {
+                        .project-description {
+                            .button-containers {
+                                .button {
+                                    font-size: xx-large;
+                                    height: 70px;
+                                    width: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 5vw;
+                    }
+                    .about-detail {
+                        font-size: 3vw;
+                        line-height: 35px;
+                    }
+                }
+            }
+            .about-content {
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    .about-content-title {
+                        font-size: 5vw;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 3vw;
+                            margin-bottom: 40px;
+                            line-height: 32px;
+                            .job-details {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+        .footer {
+            height: 30vh;
+            .contact {
+                .contact-container {
+                    .contact-button {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .footer-links-container {
+                .footer-link {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+
+/* On screens that are 1024px or less, tablets */
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    .portfolio-body {
+        .about {
+            .about-general {
+                .details {
+                    width: 65vw;
+                }
+            }
+            .about-content {
+                .details {
+                    width: 65vw;
+                }
+            }
+            .sign {
+                padding-left: 14vw;
+            }
+        }
+    }
+}
+
+
+/* On screens that are 600px or less - mobiles */
+
+@media screen and (max-width: 600px) {
+    .portfolio-body {
+        .header {
+            .nav {
+                display: flex;
+                flex-direction: column;
+                padding: 7% 5% 0% 0%;
+            }
+        }
+        .main {
+            margin: 6%;
+            height: 85vh;
+            .introduction {
+                margin-top: 15px;
+                .text-introduction {
+                    .hello-container {
+                        .greeting-one {
+                            font-size: 30vw;
+                            padding: 0;
+                            margin: 0;
+                            height: 17vh;
+                        }
+                    }
+                    .you-container {
+                        .greeting-two {
+                            font-size: 30vw;
+                            padding: 0;
+                            margin: 0;
+                            height: 17vh;
+                        }
+                    }
+                    .description {
+                        width: 80%;
+                        font-size: 23px;
+                        margin-top: 100px;
+                        line-height: 45px;
+                    }
+                }
+            }
+            .scroll-down {
+                margin: 60% 50%;
+            }
+        }
+        .projects {
+            .project-container {
+                .project-one,
+                .project-three {
+                    width: 100vw;
+                    font-size: 5vw;
+                    .project-details {
+                        .project-description {
+                            margin-top: 40px;
+                            .project-heading {
+                                font-size: 5vh;
+                            }
+                            .button-containers {
+                                .button {
+                                    font-size: smaller;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-container {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            .about-general {
+                margin-top: 50px;
+                .details {
+                    width: 65vw;
+                    .about-title {
+                        font-size: 5vw;
+                        margin: 0;
+                    }
+                    .about-detail {
+                        font-size: 4vw;
+                        margin-bottom: 0;
+                        line-height: 44px;
+                    }
+                }
+            }
+            .about-content {
+                margin-top: 50px;
+                padding-bottom: 1vh;
+                .details {
+                    width: 65vw;
+                    padding-top: 0;
+                    .about-content-title {
+                        font-size: 5vw;
+                        margin-bottom: 0;
+                        margin-top: 5px;
+                        line-height: 44px;
+                    }
+                    .company-details {
+                        .company-name {
+                            font-size: 4vw;
+                            margin-bottom: 15px;
+                            line-height: 28px;
+                            h4 {
+                                margin: 0;
+                            }
+                            .job-details {
+                                margin-top: 0;
+                                line-height: 44px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign {
+                margin-top: 50px;
+                padding-left: 14vw;
+                img {
+                    width: 40%;
+                }
+            }
+        }
+        .footer {
+            height: 40vh;
+            .contact {
+                .contact-header {
+                    font-size: 10vw;
+                }
+                .contact-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .contact-button {
+                        width: 30%;
+                        height: 20px;
+                        margin: 5px;
+                        padding-left: 45px;
+                        padding-top: 15px;
+                        font-size: 4vw;
+                    }
+                }
+            }
+            .footer-links-container {
+                margin: 5% 0% 0% 5%;
+            }
+        }
+    }
+}
