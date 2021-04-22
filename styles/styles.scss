@@ -486,18 +486,9 @@ h2 {
             flex-direction: column;
         }
         .main .introduction .text-introduction {
-            .greeting-one,
-            .greeting-two {
-                font-size: 6rem;
-            }
-            .hello-container {
-                height: 190px;
-            }
-            .greeting-two {
-                height: 130px;
-            }
-            .description {
-                width: auto;
+            .hello-container,
+            .you-container {
+                display: none;
             }
         }
         .projects .project-container {
