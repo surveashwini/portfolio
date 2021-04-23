@@ -157,6 +157,7 @@ h2 {
         background-size: cover;
         .project-container {
             display: flex;
+            width: 100%;
             .project-one,
             .project-two,
             .project-three {
@@ -200,9 +201,11 @@ h2 {
                 }
             }
             .project-two {
+                width: 100%;
                 background-color: rgba(165, 165, 165, 0.75);
-                .project-description {
+                .project-details .project-description {
                     color: $black;
+                    margin: 2rem auto;
                 }
             }
             .project-three {
@@ -312,7 +315,8 @@ h2 {
                     }
                     .job-details {
                         color: $gray;
-                        margin: 0
+                        margin: 0;
+                        font-weight: 300;
                     }
                 }
             }
@@ -422,6 +426,7 @@ h2 {
         .projects {
             .project-container {
                 .project-one,
+                .project-two,
                 .project-three {
                     width: 100%;
                 }
@@ -486,13 +491,23 @@ h2 {
             flex-direction: column;
         }
         .main .introduction .text-introduction {
-            .hello-container,
-            .you-container {
-                display: none;
+            .greeting-one,
+            .greeting-two {
+                font-size: 6rem;
+            }
+            .hello-container {
+                height: 190px;
+            }
+            .greeting-two {
+                height: 130px;
+            }
+            .description {
+                width: auto;
             }
         }
         .projects .project-container {
             .project-one,
+            .project-two,
             .project-three {
                 .project-details .project-description .project-heading,
                 .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,

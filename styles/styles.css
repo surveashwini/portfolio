@@ -11,6 +11,7 @@
   line-height: 44px;
 }
 .license-body .license-details {
+  margin-top: 50px;
   margin-bottom: 30px;
   padding: 15px;
   border-style: solid;
@@ -176,6 +177,7 @@ h2 {
 }
 .portfolio-body .projects .project-container {
   display: flex;
+  width: 100%;
 }
 .portfolio-body .projects .project-container .project-one,
 .portfolio-body .projects .project-container .project-two,
@@ -224,10 +226,12 @@ h2 {
   cursor: pointer;
 }
 .portfolio-body .projects .project-container .project-two {
+  width: 100%;
   background-color: rgba(165, 165, 165, 0.75);
 }
-.portfolio-body .projects .project-container .project-two .project-description {
+.portfolio-body .projects .project-container .project-two .project-details .project-description {
   color: #000;
+  margin: 2rem auto;
 }
 .portfolio-body .projects .project-container .project-three {
   background-color: rgba(255, 255, 255, 0.75);
@@ -335,6 +339,7 @@ h2 {
 .portfolio-body .about .about-content .company-details .company-name .job-details {
   color: gray;
   margin: 0;
+  font-weight: 300;
 }
 
 .contact {
@@ -425,6 +430,7 @@ h2 {
     width: auto;
   }
   .portfolio-body .projects .project-container .project-one,
+.portfolio-body .projects .project-container .project-two,
 .portfolio-body .projects .project-container .project-three {
     width: 100%;
   }
@@ -471,13 +477,25 @@ h2 {
     display: flex;
     flex-direction: column;
   }
-  .portfolio-body .main .introduction .text-introduction .hello-container,
-.portfolio-body .main .introduction .text-introduction .you-container {
-    display: none;
+  .portfolio-body .main .introduction .text-introduction .greeting-one,
+.portfolio-body .main .introduction .text-introduction .greeting-two {
+    font-size: 6rem;
+  }
+  .portfolio-body .main .introduction .text-introduction .hello-container {
+    height: 190px;
+  }
+  .portfolio-body .main .introduction .text-introduction .greeting-two {
+    height: 130px;
+  }
+  .portfolio-body .main .introduction .text-introduction .description {
+    width: auto;
   }
   .portfolio-body .projects .project-container .project-one .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-one .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-one .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-two .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-two .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-three .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-three .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading {
