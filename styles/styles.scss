@@ -58,11 +58,9 @@ h2 {
                 padding-right: 5rem;
                 padding-left: 5rem;
                 .greeting-one {
-                    // margin: 6% 0% 0% !important;
                     font-size: 12rem;
                     line-height: 16rem;
                     color: rgb(0, 0, 0);
-                    // transform-style: preserve-3d;
                     margin-top: 5px;
                     margin-bottom: 0px;
                     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
@@ -71,7 +69,6 @@ h2 {
                     animation-delay: 800;
                     transition-timing-function: linear;
                     animation-name: hello;
-                    //transform-style: preserve-3d;
                 }
                 @keyframes hello {
                     from {
@@ -148,7 +145,7 @@ h2 {
         height: 100%;
         width: 100%;
     }
-    .projects {
+    .projects, .plugins {
         width: 100%;
         height: 100vh;
         columns: 2;
@@ -160,7 +157,8 @@ h2 {
             width: 100%;
             .project-one,
             .project-two,
-            .project-three {
+            .project-three,
+            .project-four {
                 background-color: $dark-bg-color;
                 opacity: 0.7;
                 height: 100%;
@@ -200,15 +198,15 @@ h2 {
                     }
                 }
             }
+            
             .project-two {
-                width: 100%;
                 background-color: rgba(165, 165, 165, 0.75);
                 .project-details .project-description {
                     color: $black;
-                    margin: 2rem auto;
+                    
                 }
             }
-            .project-three {
+            .project-three,.project-four {
                 background-color: rgba(255, 255, 255, 0.75);
                 .project-details {
                     .project-description {
@@ -224,6 +222,15 @@ h2 {
                 .project-image {
                     width: 80%;
                     height: 50%;
+                }
+            }
+        }
+    }
+    .plugins {
+        .project-container{
+            .project-three {
+                .project-details .project-description .button-containers .button {
+                   background: $white;
                 }
             }
         }
@@ -412,6 +419,18 @@ h2 {
     }
 }
 
+@media (max-width: 960px) {
+    .portfolio-body {
+        .plugins .project-container {
+            .project-two, .project-three {
+                .project-details .project-description .project-heading {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 770px) {
     .portfolio-body {
         .main .introduction .text-introduction {
@@ -426,12 +445,20 @@ h2 {
         .projects {
             .project-container {
                 .project-one,
-                .project-two,
-                .project-three {
+                .project-four {
                     width: 100%;
                 }
                 .image-container {
                     display: none;
+                }
+            }
+        }
+        .plugins {
+            height: auto;
+            .project-container{
+                flex-direction: column;
+                .project-two, .project-three {
+                    width: 100%;
                 }
             }
         }
@@ -508,10 +535,10 @@ h2 {
         .projects .project-container {
             .project-one,
             .project-two,
-            .project-three {
+            .project-three,.project-four {
                 .project-details .project-description .project-heading,
                 .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
-                .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading {
+                .portfolio-body .projects .project-container .project-three,.project-four .project-details .project-description .project-heading {
                     font-size: 65px;
                 }
             }

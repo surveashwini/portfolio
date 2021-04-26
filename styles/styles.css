@@ -167,7 +167,7 @@ h2 {
   height: 100%;
   width: 100%;
 }
-.portfolio-body .projects {
+.portfolio-body .projects, .portfolio-body .plugins {
   width: 100%;
   height: 100vh;
   columns: 2;
@@ -175,13 +175,17 @@ h2 {
   display: flex;
   background-size: cover;
 }
-.portfolio-body .projects .project-container {
+.portfolio-body .projects .project-container, .portfolio-body .plugins .project-container {
   display: flex;
   width: 100%;
 }
 .portfolio-body .projects .project-container .project-one,
 .portfolio-body .projects .project-container .project-two,
-.portfolio-body .projects .project-container .project-three {
+.portfolio-body .projects .project-container .project-three,
+.portfolio-body .projects .project-container .project-four, .portfolio-body .plugins .project-container .project-one,
+.portfolio-body .plugins .project-container .project-two,
+.portfolio-body .plugins .project-container .project-three,
+.portfolio-body .plugins .project-container .project-four {
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 0.7;
   height: 100%;
@@ -190,7 +194,11 @@ h2 {
 }
 .portfolio-body .projects .project-container .project-one .project-details .project-description,
 .portfolio-body .projects .project-container .project-two .project-details .project-description,
-.portfolio-body .projects .project-container .project-three .project-details .project-description {
+.portfolio-body .projects .project-container .project-three .project-details .project-description,
+.portfolio-body .projects .project-container .project-four .project-details .project-description, .portfolio-body .plugins .project-container .project-one .project-details .project-description,
+.portfolio-body .plugins .project-container .project-two .project-details .project-description,
+.portfolio-body .plugins .project-container .project-three .project-details .project-description,
+.portfolio-body .plugins .project-container .project-four .project-details .project-description {
   height: 100vh;
   margin: 6rem auto;
   color: #fff;
@@ -199,7 +207,11 @@ h2 {
 }
 .portfolio-body .projects .project-container .project-one .project-details .project-description .project-number,
 .portfolio-body .projects .project-container .project-two .project-details .project-description .project-number,
-.portfolio-body .projects .project-container .project-three .project-details .project-description .project-number {
+.portfolio-body .projects .project-container .project-three .project-details .project-description .project-number,
+.portfolio-body .projects .project-container .project-four .project-details .project-description .project-number, .portfolio-body .plugins .project-container .project-one .project-details .project-description .project-number,
+.portfolio-body .plugins .project-container .project-two .project-details .project-description .project-number,
+.portfolio-body .plugins .project-container .project-three .project-details .project-description .project-number,
+.portfolio-body .plugins .project-container .project-four .project-details .project-description .project-number {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 70px;
   line-height: 60px;
@@ -207,7 +219,11 @@ h2 {
 }
 .portfolio-body .projects .project-container .project-one .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
-.portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading {
+.portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-four .project-details .project-description .project-heading, .portfolio-body .plugins .project-container .project-one .project-details .project-description .project-heading,
+.portfolio-body .plugins .project-container .project-two .project-details .project-description .project-heading,
+.portfolio-body .plugins .project-container .project-three .project-details .project-description .project-heading,
+.portfolio-body .plugins .project-container .project-four .project-details .project-description .project-heading {
   margin-top: 20px;
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
@@ -217,7 +233,11 @@ h2 {
 }
 .portfolio-body .projects .project-container .project-one .project-details .project-description .button-containers .button,
 .portfolio-body .projects .project-container .project-two .project-details .project-description .button-containers .button,
-.portfolio-body .projects .project-container .project-three .project-details .project-description .button-containers .button {
+.portfolio-body .projects .project-container .project-three .project-details .project-description .button-containers .button,
+.portfolio-body .projects .project-container .project-four .project-details .project-description .button-containers .button, .portfolio-body .plugins .project-container .project-one .project-details .project-description .button-containers .button,
+.portfolio-body .plugins .project-container .project-two .project-details .project-description .button-containers .button,
+.portfolio-body .plugins .project-container .project-three .project-details .project-description .button-containers .button,
+.portfolio-body .plugins .project-container .project-four .project-details .project-description .button-containers .button {
   height: 40px;
   width: 150px;
   color: #000;
@@ -225,29 +245,30 @@ h2 {
   margin-top: 20px;
   cursor: pointer;
 }
-.portfolio-body .projects .project-container .project-two {
-  width: 100%;
+.portfolio-body .projects .project-container .project-two, .portfolio-body .plugins .project-container .project-two {
   background-color: rgba(165, 165, 165, 0.75);
 }
-.portfolio-body .projects .project-container .project-two .project-details .project-description {
+.portfolio-body .projects .project-container .project-two .project-details .project-description, .portfolio-body .plugins .project-container .project-two .project-details .project-description {
   color: #000;
-  margin: 2rem auto;
 }
-.portfolio-body .projects .project-container .project-three {
+.portfolio-body .projects .project-container .project-three, .portfolio-body .projects .project-container .project-four, .portfolio-body .plugins .project-container .project-three, .portfolio-body .plugins .project-container .project-four {
   background-color: rgba(255, 255, 255, 0.75);
 }
-.portfolio-body .projects .project-container .project-three .project-details .project-description {
+.portfolio-body .projects .project-container .project-three .project-details .project-description, .portfolio-body .projects .project-container .project-four .project-details .project-description, .portfolio-body .plugins .project-container .project-three .project-details .project-description, .portfolio-body .plugins .project-container .project-four .project-details .project-description {
   color: #020202;
 }
-.portfolio-body .projects .project-container .image-container {
+.portfolio-body .projects .project-container .image-container, .portfolio-body .plugins .project-container .image-container {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.portfolio-body .projects .project-container .image-container .project-image {
+.portfolio-body .projects .project-container .image-container .project-image, .portfolio-body .plugins .project-container .image-container .project-image {
   width: 80%;
   height: 50%;
+}
+.portfolio-body .plugins .project-container .project-three .project-details .project-description .button-containers .button {
+  background: #fff;
 }
 .portfolio-body .about {
   flex-direction: column;
@@ -421,6 +442,11 @@ h2 {
     line-height: 11rem;
   }
 }
+@media (max-width: 960px) {
+  .portfolio-body .plugins .project-container .project-two .project-details .project-description .project-heading, .portfolio-body .plugins .project-container .project-three .project-details .project-description .project-heading {
+    font-size: 60px;
+  }
+}
 @media (max-width: 770px) {
   .portfolio-body .main .introduction .text-introduction .greeting-one,
 .portfolio-body .main .introduction .text-introduction .greeting-two {
@@ -430,12 +456,20 @@ h2 {
     width: auto;
   }
   .portfolio-body .projects .project-container .project-one,
-.portfolio-body .projects .project-container .project-two,
-.portfolio-body .projects .project-container .project-three {
+.portfolio-body .projects .project-container .project-four {
     width: 100%;
   }
   .portfolio-body .projects .project-container .image-container {
     display: none;
+  }
+  .portfolio-body .plugins {
+    height: auto;
+  }
+  .portfolio-body .plugins .project-container {
+    flex-direction: column;
+  }
+  .portfolio-body .plugins .project-container .project-two, .portfolio-body .plugins .project-container .project-three {
+    width: 100%;
   }
   .portfolio-body .about .about-general .details {
     padding: 10%;
@@ -492,13 +526,17 @@ h2 {
   }
   .portfolio-body .projects .project-container .project-one .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-one .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
-.portfolio-body .projects .project-container .project-one .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-one .portfolio-body .projects .project-container .project-three, .portfolio-body .projects .project-container .project-one .project-four .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-two .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
-.portfolio-body .projects .project-container .project-two .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-two .portfolio-body .projects .project-container .project-three,
+.portfolio-body .projects .project-container .project-two .project-four .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading,
 .portfolio-body .projects .project-container .project-three .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
-.portfolio-body .projects .project-container .project-three .portfolio-body .projects .project-container .project-three .project-details .project-description .project-heading {
+.portfolio-body .projects .project-container .project-three .portfolio-body .projects .project-container .project-three,
+.portfolio-body .projects .project-container .project-three .project-four .project-details .project-description .project-heading, .portfolio-body .projects .project-container .project-four .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-four .portfolio-body .projects .project-container .project-two .project-details .project-description .project-heading,
+.portfolio-body .projects .project-container .project-four .portfolio-body .projects .project-container .project-three, .portfolio-body .projects .project-container .project-four .project-four .project-details .project-description .project-heading {
     font-size: 65px;
   }
 }
