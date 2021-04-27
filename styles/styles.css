@@ -154,14 +154,13 @@ h2 {
 }
 .portfolio-body .main .scroll-down {
   cursor: pointer;
-  position: absolute;
-  left: 50%;
+  position: relative;
   right: 0px;
   bottom: 0px;
   display: block;
   margin-right: auto;
   margin-bottom: 40px;
-  margin-left: auto;
+  margin-left: 50%;
 }
 .portfolio-body .about {
   height: 100%;
@@ -266,6 +265,9 @@ h2 {
 .portfolio-body .projects .project-container .image-container .project-image, .portfolio-body .plugins .project-container .image-container .project-image {
   width: 80%;
   height: 50%;
+}
+.portfolio-body .plugins .project-container .project-two .project-details .project-description, .portfolio-body .plugins .project-container .project-three .project-details .project-description {
+  margin: 0rem auto;
 }
 .portfolio-body .plugins .project-container .project-three .project-details .project-description .button-containers .button {
   background: #fff;
@@ -437,9 +439,63 @@ h2 {
   text-decoration: none;
 }
 
+@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .portfolio-body .main {
+    height: 65vh;
+  }
+
+  .portfolio-body .projects {
+    height: 70vh;
+  }
+
+  .footer {
+    height: 55vh;
+  }
+}
+/* Portrait */
+@media only screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .portfolio-body .main {
+    height: auto;
+  }
+  .portfolio-body .main .introduction .text-introduction .hello-container .greeting-one, .portfolio-body .main .introduction .text-introduction .you-container .greeting-two {
+    font-size: 10rem;
+  }
+
+  .portfolio-body .projects, .portfolio-body .plugins {
+    height: 50vh;
+  }
+
+  .footer {
+    height: 70vh;
+  }
+}
+/* Landscape */
+@media only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .portfolio-body .main {
+    height: auto;
+  }
+  .portfolio-body .main .introduction .text-introduction .hello-container .greeting-one, .portfolio-body .main .introduction .text-introduction .you-container .greeting-two {
+    font-size: 10rem;
+  }
+
+  .portfolio-body .projects, .portfolio-body .plugins {
+    height: 70vh;
+  }
+
+  .footer {
+    height: 70vh;
+  }
+}
 @media (max-width: 1180px) {
+  .portfolio-body .main .introduction {
+    margin-top: 0;
+  }
   .portfolio-body .main .introduction .text-introduction .greeting-two {
     line-height: 11rem;
+  }
+  .portfolio-body .main .introduction .text-introduction .description {
+    width: 50%;
+    margin-top: 0;
   }
 }
 @media (max-width: 960px) {
@@ -513,7 +569,7 @@ h2 {
   }
   .portfolio-body .main .introduction .text-introduction .greeting-one,
 .portfolio-body .main .introduction .text-introduction .greeting-two {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .portfolio-body .main .introduction .text-introduction .hello-container {
     height: 190px;
@@ -539,11 +595,13 @@ h2 {
 .portfolio-body .projects .project-container .project-four .portfolio-body .projects .project-container .project-three, .portfolio-body .projects .project-container .project-four .project-four .project-details .project-description .project-heading {
     font-size: 65px;
   }
+  .portfolio-body .footer {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 350px) {
-  .portfolio-body .main .introduction .text-introduction .hello-container,
-.portfolio-body .main .introduction .text-introduction .you-container {
-    display: none;
+  .portfolio-body .main .introduction .text-introduction {
+    padding-left: 4rem;
   }
 }
 

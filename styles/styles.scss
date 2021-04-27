@@ -131,14 +131,14 @@ h2 {
         }
         .scroll-down {
             cursor: pointer;
-            position: absolute;
-            left: 50%;
+            position: relative;
+            
             right: 0px;
             bottom: 0px;
             display: block;
             margin-right: auto;
             margin-bottom: 40px;
-            margin-left: auto;
+            margin-left: 50%;
         }
     }
     .about {
@@ -228,10 +228,16 @@ h2 {
     }
     .plugins {
         .project-container{
+            .project-two, .project-three {
+                .project-details .project-description  {
+                    margin: 0rem auto;
+                }
+                
+            }
             .project-three {
                 .project-details .project-description .button-containers .button {
-                   background: $white;
-                }
+                    background: $white;
+                }                
             }
         }
     }
@@ -409,11 +415,78 @@ h2 {
     }
 }
 
+@media only screen 
+  and (width: 768px) 
+  and (height: 1024px) 
+  and (orientation: portrait) 
+{
+    .portfolio-body .main {
+        height: 65vh;
+    }
+    .portfolio-body .projects {
+        height: 70vh;
+    }
+    .footer {
+        height: 55vh;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (width: 1024px) 
+  and (height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .portfolio-body .main {
+        height: auto;
+        .introduction .text-introduction {
+            .hello-container .greeting-one, .you-container .greeting-two  {
+                font-size: 10rem;
+            }    
+        }
+    }
+    .portfolio-body .projects, .portfolio-body .plugins {
+        height: 50vh;
+    }
+    .footer {
+        height: 70vh;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (width: 1366px) 
+  and (height: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .portfolio-body .main {
+        height: auto;
+        .introduction .text-introduction {
+            .hello-container .greeting-one, .you-container .greeting-two  {
+                font-size: 10rem;
+            }    
+        }
+    }
+    .portfolio-body .projects, .portfolio-body .plugins {
+        height: 70vh;
+    }
+    .footer {
+        height: 70vh;
+    }
+}
+
 @media (max-width: 1180px) {
     .portfolio-body {
-        .main .introduction .text-introduction {
-            .greeting-two {
-                line-height: 11rem;
+        .main .introduction {
+            margin-top: 0;
+            .text-introduction {
+                .greeting-two {
+                    line-height: 11rem;
+                }
+                .description {
+                    width: 50%;
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -517,20 +590,23 @@ h2 {
             display: flex;
             flex-direction: column;
         }
-        .main .introduction .text-introduction {
-            .greeting-one,
-            .greeting-two {
-                font-size: 6rem;
+        .main .introduction {
+            .text-introduction {
+                .greeting-one,
+                .greeting-two {
+                    font-size: 5rem;
+                }
+                .hello-container {
+                    height: 190px;
+                }
+                .greeting-two {
+                    height: 130px;
+                }
+                .description {
+                    width: auto;
+                }
             }
-            .hello-container {
-                height: 190px;
-            }
-            .greeting-two {
-                height: 130px;
-            }
-            .description {
-                width: auto;
-            }
+            
         }
         .projects .project-container {
             .project-one,
@@ -543,15 +619,19 @@ h2 {
                 }
             }
         }
+        .footer {
+            height: 50vh;
+        }
     }
 }
 
 @media screen and (max-width: 350px) {
     .portfolio-body {
         .main .introduction .text-introduction {
+            padding-left: 4rem;
             .hello-container,
             .you-container {
-                display: none;
+                // display: none;
             }
         }
     }
