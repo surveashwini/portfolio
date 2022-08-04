@@ -51,7 +51,7 @@ export default function Home() {
 
               <section className="m-1">
                 <section className="font-medium pb-2">JS frameworks</section>
-                <section className="block">Angular | ReactJS</section>
+                <section className="block">Angular</section>
                 <section className="block">ReactJS</section>
               </section>
 
@@ -95,8 +95,8 @@ export default function Home() {
 
               <section className="m-1">
                 <section className="font-medium pb-2">Other</section>
-                <section className="block">Mentor</section>
-                <section className="block">Demo</section>
+                <section className="block">Mentoring</section>
+                <section className="block">Client Demos</section>
               </section>
             </section>
           </article>
@@ -176,10 +176,10 @@ export default function Home() {
                 </svg>
                 <a
                   className="pl-4"
-                  href="https://www.ashwinisurve.in"
+                  href="https://ashwinisurve.medium.com/"
                   target="_blank"
                 >
-                  Portfolio
+                  Blog
                 </a>
               </section>
             </section>
@@ -192,6 +192,11 @@ export default function Home() {
                 <section className="font-medium pb-2">Stradigi AI</section>
                 <section className="block">Developer 1</section>
                 <section className="block">April 2022 - June 2022</section>
+              </section>
+              <section className="pb-4">
+                <section className="font-medium pb-2">Vanhack</section>
+                <section className="block">Developer 1</section>
+                <section className="block">Sept 2021 - March 2022</section>
               </section>
               <section className="pb-4">
                 <section className="font-medium pb-2"> BMC Software</section>
@@ -211,7 +216,7 @@ export default function Home() {
                 <section className="block">Jan 2016 - Mar 2019</section>
               </section>
               <section className="pb-4">
-                <section className="font-medium pb-2">Xento</section>
+                <section className="font-medium pb-2">Entrata</section>
                 <section className="block">Senior Engineer</section>
                 <section className="block">Apr 2014 - Jan 2016</section>
               </section>
