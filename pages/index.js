@@ -189,6 +189,11 @@ export default function Home() {
             <h4 className="pb-4 text-xl font-medium">WORK EXPERIENCE</h4>
             <section className="m-1">
               <section className="pb-4">
+                <section className="font-medium pb-2">Stratacache</section>
+                <section className="block">Front-End Software Developer</section>
+                <section className="block">Nov 2022 - April 2024</section>
+              </section>
+              <section className="pb-4">
                 <section className="font-medium pb-2">Stradigi AI</section>
                 <section className="block">Developer 1</section>
                 <section className="block">April 2022 - June 2022</section>
@@ -231,7 +236,7 @@ export default function Home() {
           <article className="pb-6">
             <h4 className="pb-4 text-xl font-medium">LOCATION</h4>
             <section className="font-sans m-1">
-              Montreal, Quebec, Canada
+              Ottawa, Ontario, Canada
             </section>
           </article>
 
