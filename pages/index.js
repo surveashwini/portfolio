@@ -31,8 +31,8 @@ export default function Home() {
             <h4 className="pb-4 text-xl font-medium">PROFILE</h4>
             <section className="m-1">
               A passionate programmer with 11 years of experience developing
-              web-based applications using Javascript(ES6), Angular, React.js,
-              Node.js, Python. Advanced Object-Oriented skills with a passion
+              web-based applications using Javascript(ES6), Angular, React,
+              NodeJS, Python. Advanced Object-Oriented skills with a passion
               for writing clean code and utilizing emerging technologies to
               provide the best solutions. Proven records of excellent public
               speaking skills, utilized in various presentations and training.
@@ -56,6 +56,17 @@ export default function Home() {
               </section>
 
               <section className="m-1">
+                <section className="font-medium pb-2">Reactive Programming Library</section>
+                <section className="block">RxJS</section>
+              </section>
+
+              <section className="m-1">
+                <section className="font-medium pb-2">Backend</section>
+                <section className="block">NodeJS</section>
+                <section className="block">Python</section>
+              </section>
+
+              <section className="m-1">
                 <section className="font-medium pb-2">Backend frameworks</section>
                 <section className="block">NestJS</section>
               </section>
@@ -66,21 +77,10 @@ export default function Home() {
               </section>
 
               <section className="m-1">
-                <section className="font-medium pb-2">Reactive Programming Library</section>
-                <section className="block">RxJs</section>
-              </section>
-
-              <section className="m-1">
-                <section className="font-medium pb-2">Backend</section>
-                <section className="block">NodeJS</section>
-                <section className="block">Python</section>
-              </section>
-
-              <section className="m-1">
                 <section className="font-medium pb-2">Database</section>
+                <section className="block">PostgreSQL</section>
                 <section className="block">MongoDB</section>
                 <section className="block">mySQL</section>
-                <section className="block">PostgreSQL</section>
               </section>
 
               <section className="m-1">
