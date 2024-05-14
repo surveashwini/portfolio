@@ -61,8 +61,13 @@ export default function Home() {
               </section>
 
               <section className="m-1">
-                <section className="font-medium pb-2">Object-Relational Mapping (ORM) library</section>
+                <section className="font-medium pb-2">ORM library</section>
                 <section className="block">TypeORM</section>
+              </section>
+
+              <section className="m-1">
+                <section className="font-medium pb-2">Reactive Programming Library</section>
+                <section className="block">RxJs</section>
               </section>
 
               <section className="m-1">
