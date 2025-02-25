@@ -204,6 +204,11 @@ export default function Home() {
             <h4 className="pb-4 text-xl font-medium">WORK EXPERIENCE</h4>
             <section className="m-1">
               <section className="pb-4">
+                <section className="font-medium pb-2">Acerta</section>
+                <section className="block">Senior Software Engineer</section>
+                <section className="block">Aug 2024 - Present</section>
+              </section>
+              <section className="pb-4">
                 <section className="font-medium pb-2">Stratacache</section>
                 <section className="block">Front-End Software Developer</section>
                 <section className="block">Nov 2022 - April 2024</section>
