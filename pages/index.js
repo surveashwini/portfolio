@@ -30,7 +30,7 @@ export default function Home() {
           <article className="pb-6">
             <h4 className="pb-4 text-xl font-medium">PROFILE</h4>
             <section className="m-1">
-              A passionate programmer with 11 years of experience developing
+              A passionate programmer with 12 years of experience developing
               web-based applications using Javascript(ES6), Angular, React,
               NodeJS, Python. Advanced Object-Oriented skills with a passion
               for writing clean code and utilizing emerging technologies to
